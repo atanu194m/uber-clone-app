@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 80" width="160" height="80">
+  <defs>
+    <linearGradient id="autoYellow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="100%" stop-color="#eab308"/>
+    </linearGradient>
+    <linearGradient id="autoGreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#15803d"/>
+      <stop offset="100%" stop-color="#166534"/>
+    </linearGradient>
+    <linearGradient id="wheelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ground Shadow -->
+  <ellipse cx="80" cy="70" rx="55" ry="5" fill="#000000" opacity="0.25"/>
+
+  <!-- Rear Wheel -->
+  <circle cx="44" cy="56" r="13" fill="url(#wheelGrad)"/>
+  <circle cx="44" cy="56" r="7" fill="#cbd5e1"/>
+  <circle cx="44" cy="56" r="3" fill="#0f172a"/>
+
+  <!-- Front Wheel -->
+  <circle cx="124" cy="56" r="13" fill="url(#wheelGrad)"/>
+  <circle cx="124" cy="56" r="7" fill="#cbd5e1"/>
+  <circle cx="124" cy="56" r="3" fill="#0f172a"/>
+
+  <!-- Main Chassis / Green Body -->
+  <path d="M 28 42 
+           L 32 56 
+           C 33 58, 36 58, 40 58 
+           L 48 58 
+           C 50 52, 56 50, 60 50 
+           L 100 50 
+           C 106 50, 114 53, 118 58 
+           L 128 58 
+           C 134 58, 137 54, 136 48 
+           L 132 38 
+           L 118 38 
+           L 114 42 
+           L 68 42 
+           L 68 38 
+           L 28 38 Z" 
+        fill="url(#autoGreen)"/>
+
+  <!-- Yellow Hood / Roof Canopy -->
+  <path d="M 24 38 
+           C 24 22, 34 16, 50 16 
+           L 96 16 
+           C 108 16, 118 20, 122 28 
+           L 126 38 
+           L 116 38 
+           L 112 28 
+           C 110 24, 102 22, 94 22 
+           L 50 22 
+           C 38 22, 32 26, 30 38 Z" 
+        fill="url(#autoYellow)"/>
+
+  <!-- Passenger Opening / Cabin Window -->
+  <rect x="36" y="24" width="40" height="15" rx="3" fill="#0f172a" opacity="0.85"/>
+  <rect x="42" y="32" width="28" height="6" rx="2" fill="#334155"/>
+
+  <!-- Front Windshield -->
+  <polygon points="102,20 118,24 124,36 106,36" fill="#93c5fd" opacity="0.7"/>
+
+  <!-- Pillar Bars -->
+  <line x1="82" y1="20" x2="82" y2="42" stroke="#eab308" stroke-width="3"/>
+  <line x1="102" y1="20" x2="104" y2="40" stroke="#eab308" stroke-width="2.5"/>
+
+  <!-- Front Headlight -->
+  <circle cx="134" cy="42" r="4.5" fill="#fef08a"/>
+  <circle cx="134" cy="42" r="2.5" fill="#ffffff"/>
+
+  <!-- Handlebar / Front Mudguard -->
+  <path d="M 116 42 L 126 42 L 130 50" stroke="#0f172a" stroke-width="3" fill="none"/>
+</svg>
+

@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 80" width="160" height="80">
+  <defs>
+    <linearGradient id="carBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="60%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+    <linearGradient id="carGlass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="wheelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Shadow -->
+  <ellipse cx="80" cy="68" rx="66" ry="6" fill="#000000" opacity="0.25"/>
+
+  <!-- Main Body -->
+  <g filter="url(#shadow)">
+    <!-- Chassis / Lower Body -->
+    <path d="M 12 48 
+             C 12 44, 18 36, 28 35 
+             L 48 34 
+             L 66 18 
+             C 70 14, 76 13, 86 13 
+             L 112 13 
+             C 120 13, 126 17, 131 24 
+             L 142 35 
+             C 148 37, 152 41, 152 46 
+             L 152 54 
+             C 152 56, 150 58, 147 58 
+             L 138 58 
+             C 137 50, 128 44, 119 44 
+             C 110 44, 101 50, 100 58 
+             L 58 58 
+             C 57 50, 48 44, 39 44 
+             C 30 44, 21 50, 20 58 
+             L 15 58 
+             C 13 58, 12 56, 12 54 Z" 
+          fill="url(#carBody)" stroke="#94a3b8" stroke-width="1"/>
+
+    <!-- Front & Rear Bumpers -->
+    <path d="M 12 50 C 12 56, 15 58, 18 58 L 20 58 C 20 54, 22 51, 25 50 Z" fill="#cbd5e1"/>
+    <path d="M 152 48 C 152 55, 149 58, 145 58 L 138 58 C 139 52, 143 49, 148 49 Z" fill="#cbd5e1"/>
+
+    <!-- Windows Frame -->
+    <path d="M 50 33 L 67 18 C 70 15, 75 14, 84 14 L 110 14 C 117 14, 123 18, 127 24 L 137 33 Z" fill="url(#carGlass)"/>
+    
+    <!-- Window Divider B-Pillar -->
+    <rect x="88" y="14" width="4" height="19" fill="#0f172a"/>
+    
+    <!-- Windshield Reflection Highlight -->
+    <polygon points="69,17 74,15 110,31 105,33" fill="#ffffff" opacity="0.25"/>
+
+    <!-- Door Line -->
+    <path d="M 89 33 L 89 57" stroke="#94a3b8" stroke-width="1"/>
+    <path d="M 54 34 L 54 56" stroke="#94a3b8" stroke-width="0.8"/>
+    <rect x="82" y="36" width="6" height="2" rx="1" fill="#64748b"/>
+    <rect x="118" y="36" width="6" height="2" rx="1" fill="#64748b"/>
+
+    <!-- Headlight -->
+    <path d="M 144 38 L 151 43 C 152 46, 149 48, 146 48 L 142 43 Z" fill="#fef08a"/>
+    <path d="M 148 41 L 152 44 L 148 46 Z" fill="#ffffff"/>
+
+    <!-- Taillight -->
+    <path d="M 12 46 C 12 43, 14 41, 16 41 L 18 48 L 13 48 Z" fill="#ef4444"/>
+  </g>
+
+  <!-- Rear Wheel -->
+  <g>
+    <circle cx="39" cy="58" r="13" fill="url(#wheelGrad)"/>
+    <circle cx="39" cy="58" r="9" fill="#e2e8f0"/>
+    <circle cx="39" cy="58" r="4" fill="#0f172a"/>
+    <!-- Spokes -->
+    <line x1="39" y1="49" x2="39" y2="67" stroke="#64748b" stroke-width="1.5"/>
+    <line x1="30" y1="58" x2="48" y2="58" stroke="#64748b" stroke-width="1.5"/>
+    <line x1="33" y1="52" x2="45" y2="64" stroke="#64748b" stroke-width="1.5"/>
+    <line x1="33" y1="64" x2="45" y2="52" stroke="#64748b" stroke-width="1.5"/>
+  </g>
+
+  <!-- Front Wheel -->
+  <g>
+    <circle cx="119" cy="58" r="13" fill="url(#wheelGrad)"/>
+    <circle cx="119" cy="58" r="9" fill="#e2e8f0"/>
+    <circle cx="119" cy="58" r="4" fill="#0f172a"/>
+    <!-- Spokes -->
+    <line x1="119" y1="49" x2="119" y2="67" stroke="#64748b" stroke-width="1.5"/>
+    <line x1="110" y1="58" x2="128" y2="58" stroke="#64748b" stroke-width="1.5"/>
+    <line x1="113" y1="52" x2="125" y2="64" stroke="#64748b" stroke-width="1.5"/>
+    <line x1="113" y1="64" x2="125" y2="52" stroke="#64748b" stroke-width="1.5"/>
+  </g>
+</svg>
+

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 80" width="160" height="80">
+  <defs>
+    <linearGradient id="motoBody" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <linearGradient id="wheelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ground Shadow -->
+  <ellipse cx="80" cy="70" rx="60" ry="5" fill="#000000" opacity="0.25"/>
+
+  <!-- Rear Wheel -->
+  <circle cx="36" cy="54" r="15" fill="url(#wheelGrad)"/>
+  <circle cx="36" cy="54" r="9" fill="#e2e8f0"/>
+  <circle cx="36" cy="54" r="4" fill="#0f172a"/>
+  <!-- Spokes -->
+  <line x1="36" y1="45" x2="36" y2="63" stroke="#64748b" stroke-width="1.5"/>
+  <line x1="27" y1="54" x2="45" y2="54" stroke="#64748b" stroke-width="1.5"/>
+
+  <!-- Front Wheel -->
+  <circle cx="124" cy="54" r="15" fill="url(#wheelGrad)"/>
+  <circle cx="124" cy="54" r="9" fill="#e2e8f0"/>
+  <circle cx="124" cy="54" r="4" fill="#0f172a"/>
+  <!-- Spokes -->
+  <line x1="124" y1="45" x2="124" y2="63" stroke="#64748b" stroke-width="1.5"/>
+  <line x1="115" y1="54" x2="133" y2="54" stroke="#64748b" stroke-width="1.5"/>
+
+  <!-- Exhaust Pipe -->
+  <path d="M 46 56 L 68 56 C 74 56, 78 54, 82 50 L 86 46" stroke="#94a3b8" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <rect x="30" y="54" width="22" height="5" rx="2.5" fill="#64748b"/>
+
+  <!-- Engine & Frame -->
+  <polygon points="62,40 85,38 90,52 68,54" fill="#334155"/>
+  <circle cx="75" cy="46" r="6" fill="#1e293b"/>
+  <!-- Swingarm -->
+  <line x1="36" y1="54" x2="68" y2="50" stroke="#475569" stroke-width="4"/>
+
+  <!-- Front Fork & Handlebar -->
+  <line x1="124" y1="54" x2="108" y2="24" stroke="#64748b" stroke-width="4"/>
+  <path d="M 108 24 L 102 20" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/>
+  <!-- Handle Grip -->
+  <circle cx="101" cy="19" r="2.5" fill="#f97316"/>
+
+  <!-- Fuel Tank & Main Body -->
+  <path d="M 58 35 
+           C 62 26, 74 24, 86 24 
+           C 96 24, 104 27, 108 34 
+           L 96 42 
+           L 78 40 
+           L 58 35 Z" 
+        fill="url(#motoBody)"/>
+
+  <!-- Seat -->
+  <path d="M 44 32 C 48 31, 56 31, 64 34 L 78 35 L 76 39 L 48 37 C 44 37, 42 34, 44 32 Z" fill="#1e293b"/>
+
+  <!-- Rear Fender / Tail -->
+  <path d="M 32 38 L 46 32 L 52 38 L 38 42 Z" fill="#ea580c"/>
+  <circle cx="32" cy="40" r="2" fill="#ef4444"/>
+
+  <!-- Headlight -->
+  <path d="M 112 28 L 118 32 C 117 35, 114 36, 110 36 L 108 30 Z" fill="#fef08a"/>
+</svg>
+
