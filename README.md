@@ -32,22 +32,6 @@ Review trip details, destination address, and fare payment mode (Cash/Card) befo
 
 ---
 
-### 4. Captain Accepts Ride & OTP Verification
-The ride request is pushed instantly to active captains via Socket.io. Once the captain accepts, the user receives driver details and a unique **6-digit OTP**. The captain must enter this OTP to start the journey.
-<p align="center">
-  <img src="screenshots/04-captain-otp-verification.png" alt="OTP Verification" width="700"/>
-</p>
-
----
-
-### 5. Riding & Trip Completion
-Live GPS map tracking during the ongoing trip. Once destination is reached, the captain completes the trip and payment is settled.
-<p align="center">
-  <img src="screenshots/05-finish-ride.jpg" alt="Finish Ride" width="700"/>
-</p>
-
----
-
 ## ✨ Features
 
 - **🔐 Authentication & Authorization:**
